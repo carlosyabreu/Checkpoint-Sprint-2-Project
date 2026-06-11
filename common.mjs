@@ -39,13 +39,13 @@ export function findLongestStreak(listenEvents) {
     return { songId: maxSongId, streakLength: maxStreak };
 }
 
-// Helper function to get top N items from a map
+// Helper function to get top N items
 export function getTopN(map, n) {
     const sorted = Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
     return sorted.slice(0, n);
 }
 
-// Helper function to get most frequent item from a map
+// Helper function to get most frequent item 
 export function getMostFrequent(map) {
     let maxCount = -1;
     let maxItem = null;
